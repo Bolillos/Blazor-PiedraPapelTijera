@@ -1,0 +1,21 @@
+﻿@page "/sujeto1"
+@inject NavigationManager Navigation
+
+<PageTitle>Prueba Sujeto Nº1</PageTitle>
+
+<h1>Componentes</h1>
+
+<p role="status">Componente 1</p>
+
+<RadzenButton Shade="Shade.Dark" Click=@(args => OnClick("Warning button ")) Text="Warning" ButtonStyle="ButtonStyle.Warning" />
+
+    
+
+
+@code {
+
+    private void OnClick(string text)
+    {
+        Navigation.NavigateTo("https://bolillos04.atspace.eu");
+    }
+}
